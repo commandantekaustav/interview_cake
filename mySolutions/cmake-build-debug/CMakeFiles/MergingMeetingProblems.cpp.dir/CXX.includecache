@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/interview_cake/mySolutions/MergingMeetingProblems.cpp
+lest.hpp
+-
+iostream
+-
+vector
+-
+algorithm
+-
+
