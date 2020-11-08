@@ -1,0 +1,3 @@
+"D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ReverseWords.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\ReverseWords.dir/objects.a @CMakeFiles\ReverseWords.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\ReverseWords.dir/objects.a -Wl,--no-whole-archive  -o ReverseWords.exe -Wl,--out-implib,libReverseWords.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ReverseWords.dir\linklibs.rsp

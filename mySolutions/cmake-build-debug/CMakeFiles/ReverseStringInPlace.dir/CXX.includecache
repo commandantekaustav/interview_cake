@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/interview_cake/mySolutions/ReverseStringInPlace.cpp
+iostream
+-
+string
+-
+lest.hpp
+D:/interview_cake/mySolutions/lest.hpp
+

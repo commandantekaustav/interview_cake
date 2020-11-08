@@ -1,3 +1,5 @@
-D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/MergingMeetingProblems.cpp.dir
+D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/MergingMeetingProblems.dir
+D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/ReverseStringInPlace.dir
+D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/ReverseWords.dir
 D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/interview_cake/mySolutions/cmake-build-debug/CMakeFiles/rebuild_cache.dir

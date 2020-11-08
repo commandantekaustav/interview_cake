@@ -53,5 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MergingMeetingProblems.cpp.dir/DependInfo.cmake"
+  "CMakeFiles/MergingMeetingProblems.dir/DependInfo.cmake"
+  "CMakeFiles/ReverseStringInPlace.dir/DependInfo.cmake"
+  "CMakeFiles/ReverseWords.dir/DependInfo.cmake"
   )

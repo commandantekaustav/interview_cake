@@ -130,17 +130,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MergingMeetingProblems.cpp
+# Target rules for targets named MergingMeetingProblems
 
 # Build rule for target.
-MergingMeetingProblems.cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MergingMeetingProblems.cpp
-.PHONY : MergingMeetingProblems.cpp
+MergingMeetingProblems: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MergingMeetingProblems
+.PHONY : MergingMeetingProblems
 
 # fast build rule for target.
-MergingMeetingProblems.cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.cpp.dir\build.make CMakeFiles/MergingMeetingProblems.cpp.dir/build
-.PHONY : MergingMeetingProblems.cpp/fast
+MergingMeetingProblems/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/build
+.PHONY : MergingMeetingProblems/fast
+
+#=============================================================================
+# Target rules for targets named ReverseStringInPlace
+
+# Build rule for target.
+ReverseStringInPlace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ReverseStringInPlace
+.PHONY : ReverseStringInPlace
+
+# fast build rule for target.
+ReverseStringInPlace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/build
+.PHONY : ReverseStringInPlace/fast
+
+#=============================================================================
+# Target rules for targets named ReverseWords
+
+# Build rule for target.
+ReverseWords: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ReverseWords
+.PHONY : ReverseWords
+
+# fast build rule for target.
+ReverseWords/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/build
+.PHONY : ReverseWords/fast
 
 MergingMeetingProblems.obj: MergingMeetingProblems.cpp.obj
 
@@ -148,7 +174,7 @@ MergingMeetingProblems.obj: MergingMeetingProblems.cpp.obj
 
 # target to build an object file
 MergingMeetingProblems.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.cpp.dir\build.make CMakeFiles/MergingMeetingProblems.cpp.dir/MergingMeetingProblems.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.obj
 .PHONY : MergingMeetingProblems.cpp.obj
 
 MergingMeetingProblems.i: MergingMeetingProblems.cpp.i
@@ -157,7 +183,7 @@ MergingMeetingProblems.i: MergingMeetingProblems.cpp.i
 
 # target to preprocess a source file
 MergingMeetingProblems.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.cpp.dir\build.make CMakeFiles/MergingMeetingProblems.cpp.dir/MergingMeetingProblems.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.i
 .PHONY : MergingMeetingProblems.cpp.i
 
 MergingMeetingProblems.s: MergingMeetingProblems.cpp.s
@@ -166,8 +192,62 @@ MergingMeetingProblems.s: MergingMeetingProblems.cpp.s
 
 # target to generate assembly for a file
 MergingMeetingProblems.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.cpp.dir\build.make CMakeFiles/MergingMeetingProblems.cpp.dir/MergingMeetingProblems.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.s
 .PHONY : MergingMeetingProblems.cpp.s
+
+ReverseStringInPlace.obj: ReverseStringInPlace.cpp.obj
+
+.PHONY : ReverseStringInPlace.obj
+
+# target to build an object file
+ReverseStringInPlace.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.obj
+.PHONY : ReverseStringInPlace.cpp.obj
+
+ReverseStringInPlace.i: ReverseStringInPlace.cpp.i
+
+.PHONY : ReverseStringInPlace.i
+
+# target to preprocess a source file
+ReverseStringInPlace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.i
+.PHONY : ReverseStringInPlace.cpp.i
+
+ReverseStringInPlace.s: ReverseStringInPlace.cpp.s
+
+.PHONY : ReverseStringInPlace.s
+
+# target to generate assembly for a file
+ReverseStringInPlace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.s
+.PHONY : ReverseStringInPlace.cpp.s
+
+ReverseWords.obj: ReverseWords.cpp.obj
+
+.PHONY : ReverseWords.obj
+
+# target to build an object file
+ReverseWords.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.obj
+.PHONY : ReverseWords.cpp.obj
+
+ReverseWords.i: ReverseWords.cpp.i
+
+.PHONY : ReverseWords.i
+
+# target to preprocess a source file
+ReverseWords.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.i
+.PHONY : ReverseWords.cpp.i
+
+ReverseWords.s: ReverseWords.cpp.s
+
+.PHONY : ReverseWords.s
+
+# target to generate assembly for a file
+ReverseWords.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.s
+.PHONY : ReverseWords.cpp.s
 
 # Help Target
 help:
@@ -177,10 +257,18 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MergingMeetingProblems.cpp
+	@echo ... MergingMeetingProblems
+	@echo ... ReverseStringInPlace
+	@echo ... ReverseWords
 	@echo ... MergingMeetingProblems.obj
 	@echo ... MergingMeetingProblems.i
 	@echo ... MergingMeetingProblems.s
+	@echo ... ReverseStringInPlace.obj
+	@echo ... ReverseStringInPlace.i
+	@echo ... ReverseStringInPlace.s
+	@echo ... ReverseWords.obj
+	@echo ... ReverseWords.i
+	@echo ... ReverseWords.s
 .PHONY : help
 
 
