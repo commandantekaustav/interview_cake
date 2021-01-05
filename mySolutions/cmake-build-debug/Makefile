@@ -58,10 +58,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = D:\interview_cake\mySolutions\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -130,43 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MergingMeetingProblems
+# Target rules for targets named Output
 
 # Build rule for target.
-MergingMeetingProblems: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MergingMeetingProblems
-.PHONY : MergingMeetingProblems
+Output: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Output
+.PHONY : Output
 
 # fast build rule for target.
-MergingMeetingProblems/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/build
-.PHONY : MergingMeetingProblems/fast
+Output/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/build
+.PHONY : Output/fast
 
-#=============================================================================
-# Target rules for targets named ReverseStringInPlace
+CafeOrderChecker.obj: CafeOrderChecker.cpp.obj
 
-# Build rule for target.
-ReverseStringInPlace: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ReverseStringInPlace
-.PHONY : ReverseStringInPlace
+.PHONY : CafeOrderChecker.obj
 
-# fast build rule for target.
-ReverseStringInPlace/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/build
-.PHONY : ReverseStringInPlace/fast
+# target to build an object file
+CafeOrderChecker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/CafeOrderChecker.cpp.obj
+.PHONY : CafeOrderChecker.cpp.obj
 
-#=============================================================================
-# Target rules for targets named ReverseWords
+CafeOrderChecker.i: CafeOrderChecker.cpp.i
 
-# Build rule for target.
-ReverseWords: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ReverseWords
-.PHONY : ReverseWords
+.PHONY : CafeOrderChecker.i
 
-# fast build rule for target.
-ReverseWords/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/build
-.PHONY : ReverseWords/fast
+# target to preprocess a source file
+CafeOrderChecker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/CafeOrderChecker.cpp.i
+.PHONY : CafeOrderChecker.cpp.i
+
+CafeOrderChecker.s: CafeOrderChecker.cpp.s
+
+.PHONY : CafeOrderChecker.s
+
+# target to generate assembly for a file
+CafeOrderChecker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/CafeOrderChecker.cpp.s
+.PHONY : CafeOrderChecker.cpp.s
 
 MergingMeetingProblems.obj: MergingMeetingProblems.cpp.obj
 
@@ -174,7 +175,7 @@ MergingMeetingProblems.obj: MergingMeetingProblems.cpp.obj
 
 # target to build an object file
 MergingMeetingProblems.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/MergingMeetingProblems.cpp.obj
 .PHONY : MergingMeetingProblems.cpp.obj
 
 MergingMeetingProblems.i: MergingMeetingProblems.cpp.i
@@ -183,7 +184,7 @@ MergingMeetingProblems.i: MergingMeetingProblems.cpp.i
 
 # target to preprocess a source file
 MergingMeetingProblems.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/MergingMeetingProblems.cpp.i
 .PHONY : MergingMeetingProblems.cpp.i
 
 MergingMeetingProblems.s: MergingMeetingProblems.cpp.s
@@ -192,7 +193,7 @@ MergingMeetingProblems.s: MergingMeetingProblems.cpp.s
 
 # target to generate assembly for a file
 MergingMeetingProblems.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/MergingMeetingProblems.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/MergingMeetingProblems.cpp.s
 .PHONY : MergingMeetingProblems.cpp.s
 
 ReverseStringInPlace.obj: ReverseStringInPlace.cpp.obj
@@ -201,7 +202,7 @@ ReverseStringInPlace.obj: ReverseStringInPlace.cpp.obj
 
 # target to build an object file
 ReverseStringInPlace.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseStringInPlace.cpp.obj
 .PHONY : ReverseStringInPlace.cpp.obj
 
 ReverseStringInPlace.i: ReverseStringInPlace.cpp.i
@@ -210,7 +211,7 @@ ReverseStringInPlace.i: ReverseStringInPlace.cpp.i
 
 # target to preprocess a source file
 ReverseStringInPlace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseStringInPlace.cpp.i
 .PHONY : ReverseStringInPlace.cpp.i
 
 ReverseStringInPlace.s: ReverseStringInPlace.cpp.s
@@ -219,7 +220,7 @@ ReverseStringInPlace.s: ReverseStringInPlace.cpp.s
 
 # target to generate assembly for a file
 ReverseStringInPlace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/ReverseStringInPlace.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseStringInPlace.cpp.s
 .PHONY : ReverseStringInPlace.cpp.s
 
 ReverseWords.obj: ReverseWords.cpp.obj
@@ -228,7 +229,7 @@ ReverseWords.obj: ReverseWords.cpp.obj
 
 # target to build an object file
 ReverseWords.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseWords.cpp.obj
 .PHONY : ReverseWords.cpp.obj
 
 ReverseWords.i: ReverseWords.cpp.i
@@ -237,7 +238,7 @@ ReverseWords.i: ReverseWords.cpp.i
 
 # target to preprocess a source file
 ReverseWords.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseWords.cpp.i
 .PHONY : ReverseWords.cpp.i
 
 ReverseWords.s: ReverseWords.cpp.s
@@ -246,7 +247,7 @@ ReverseWords.s: ReverseWords.cpp.s
 
 # target to generate assembly for a file
 ReverseWords.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/ReverseWords.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/ReverseWords.cpp.s
 .PHONY : ReverseWords.cpp.s
 
 # Help Target
@@ -257,9 +258,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MergingMeetingProblems
-	@echo ... ReverseStringInPlace
-	@echo ... ReverseWords
+	@echo ... Output
+	@echo ... CafeOrderChecker.obj
+	@echo ... CafeOrderChecker.i
+	@echo ... CafeOrderChecker.s
 	@echo ... MergingMeetingProblems.obj
 	@echo ... MergingMeetingProblems.i
 	@echo ... MergingMeetingProblems.s

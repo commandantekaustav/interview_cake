@@ -54,10 +54,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,9 +72,7 @@ CMAKE_BINARY_DIR = D:\interview_cake\mySolutions\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MergingMeetingProblems.dir/all
-all: CMakeFiles/ReverseStringInPlace.dir/all
-all: CMakeFiles/ReverseWords.dir/all
+all: CMakeFiles/Output.dir/all
 
 .PHONY : all
 
@@ -84,92 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MergingMeetingProblems.dir/clean
-clean: CMakeFiles/ReverseStringInPlace.dir/clean
-clean: CMakeFiles/ReverseWords.dir/clean
+clean: CMakeFiles/Output.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MergingMeetingProblems.dir
+# Target rules for target CMakeFiles/Output.dir
 
 # All Build rule for target.
-CMakeFiles/MergingMeetingProblems.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target MergingMeetingProblems"
-.PHONY : CMakeFiles/MergingMeetingProblems.dir/all
+CMakeFiles/Output.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Output"
+.PHONY : CMakeFiles/Output.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MergingMeetingProblems.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MergingMeetingProblems.dir/all
+CMakeFiles/Output.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Output.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/MergingMeetingProblems.dir/rule
+.PHONY : CMakeFiles/Output.dir/rule
 
 # Convenience name for target.
-MergingMeetingProblems: CMakeFiles/MergingMeetingProblems.dir/rule
+Output: CMakeFiles/Output.dir/rule
 
-.PHONY : MergingMeetingProblems
-
-# clean rule for target.
-CMakeFiles/MergingMeetingProblems.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MergingMeetingProblems.dir\build.make CMakeFiles/MergingMeetingProblems.dir/clean
-.PHONY : CMakeFiles/MergingMeetingProblems.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ReverseStringInPlace.dir
-
-# All Build rule for target.
-CMakeFiles/ReverseStringInPlace.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target ReverseStringInPlace"
-.PHONY : CMakeFiles/ReverseStringInPlace.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ReverseStringInPlace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ReverseStringInPlace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/ReverseStringInPlace.dir/rule
-
-# Convenience name for target.
-ReverseStringInPlace: CMakeFiles/ReverseStringInPlace.dir/rule
-
-.PHONY : ReverseStringInPlace
+.PHONY : Output
 
 # clean rule for target.
-CMakeFiles/ReverseStringInPlace.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseStringInPlace.dir\build.make CMakeFiles/ReverseStringInPlace.dir/clean
-.PHONY : CMakeFiles/ReverseStringInPlace.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ReverseWords.dir
-
-# All Build rule for target.
-CMakeFiles/ReverseWords.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target ReverseWords"
-.PHONY : CMakeFiles/ReverseWords.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ReverseWords.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ReverseWords.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\interview_cake\mySolutions\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/ReverseWords.dir/rule
-
-# Convenience name for target.
-ReverseWords: CMakeFiles/ReverseWords.dir/rule
-
-.PHONY : ReverseWords
-
-# clean rule for target.
-CMakeFiles/ReverseWords.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseWords.dir\build.make CMakeFiles/ReverseWords.dir/clean
-.PHONY : CMakeFiles/ReverseWords.dir/clean
+CMakeFiles/Output.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Output.dir\build.make CMakeFiles/Output.dir/clean
+.PHONY : CMakeFiles/Output.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

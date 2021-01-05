@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\CafeOrderChecker.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\CafeOrderChecker.dir/objects.a @CMakeFiles\CafeOrderChecker.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\CafeOrderChecker.dir/objects.a -Wl,--no-whole-archive  -o CafeOrderChecker.exe -Wl,--out-implib,libCafeOrderChecker.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CafeOrderChecker.dir\linklibs.rsp
